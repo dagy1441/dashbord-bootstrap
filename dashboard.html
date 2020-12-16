@@ -31,7 +31,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-md">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="historique.html">Navbar</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -75,7 +75,7 @@
       <div class="container">
         <ol class="breadcrumb">
           <li class="active">Dashboard</li>
-          <span>->profils</span>
+          <span>->Dashboard</span>
         </ol>
       </div>
     </section>
@@ -88,7 +88,7 @@
             <div class="list-group">
               <a
                 href="dashboard.html"
-                class="list-group-item active main-color-bg"
+                class="list-group-item no-underline main-color-bg"
               >
                 <i class="fas fa-cogs"></i> Dashboard
               </a>
@@ -108,98 +108,52 @@
                 class="list-group-item list-group-item__ext no-underline text-black"
                 ><i class="fas fa-file-alt"></i> Historiques
               </a>
+              <!-- <a
+                href="historique.html"
+                class="list-group-item list-group-item__ext no-underline text-black"
+                ><i class="far fa-newspaper"></i> Liste des salles
+              </a> -->
             </div>
           </div>
 
           <div class="col-md-9">
             <div class="card">
-              <div class="card-header main-color-bg">Edit Profil</div>
+              <!-- <div class="card-header main-color-bg">Etat des reservations</div> -->
               <div class="card-body">
-                <form>
-                  <div class="form-group">
-                    <label for="nom">Nom</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="nom"
-                      name=""
-                      aria-describedby="nom"
-                    />
-                    <small id="nom" class="form-text text-muted"
-                      >Verifier le nom.</small
-                    >
+                <div class="row">
+                  <div class="col-md-3 offset-md-1">
+                    <div class="card card-body bg-light">
+                      <h2><i class="far fa-newspaper"></i> 202</h2>
+
+                      <a
+                        href="reservation.html"
+                        class="alert alert-warning alert-md"
+                        >Accepter</a
+                      >
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label for="contact">Contact</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="contact"
-                      name=""
-                      aria-describedby="contact"
-                    />
-                    <small id="contact" class="form-text text-muted"
-                      >Verifier le contact.</small
-                    >
+                  <div class="col-md-3">
+                    <div class="card card-body bg-light">
+                      <h2><i class="far fa-newspaper"></i> 202</h2>
+
+                      <a
+                        href="reservation.html"
+                        class="alert alert-danger alert-md"
+                        >En Attente</a
+                      >
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label for="adresse">Adresse</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="adresse"
-                      name=""
-                      aria-describedby="adresse"
-                    />
-                    <small id="adresse" class="form-text text-muted"
-                      >Verifier l'adresse.</small
-                    >
+                  <div class="col-md-3 offset-md">
+                    <div class="card card-body bg-light">
+                      <h2><i class="far fa-newspaper"></i> 202</h2>
+                      <a
+                        href="reservation.html"
+                        class="alert alert-info alert-md"
+                        >Rejeter</a
+                      >
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label for="email">Email address</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      name=""
-                      aria-describedby="email"
-                    />
-                    <small id="email" class="form-text text-muted"
-                      >Verifier l'email.</small
-                    >
-                  </div>
-                  <div class="form-group">
-                    <label for="password">Password</label>
-                    <input
-                      type="password"
-                      class="form-control"
-                      name=""
-                      id="password1"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="password2">Confirm Password</label>
-                    <input
-                      type="password"
-                      class="form-control"
-                      name=""
-                      id="password"
-                    />
-                  </div>
-                  <!-- <div class="form-group form-check">
-                    <input
-                      type="checkbox"
-                      class="form-check-input"
-                      id="exampleCheck1"
-                    />
-                    <label class="form-check-label" for="exampleCheck1"
-                      >Check me out</label
-                    >
-                  </div> -->
-                  <button type="submit" class="btn o-btn o-btn-o o-btn-sm">
-                    Valider
-                  </button>
-                </form>
+                </div>
               </div>
             </div>
           </div>
